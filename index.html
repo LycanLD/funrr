@@ -1,50 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- HTML Meta Tags -->
-    <title>Loading...</title>
-    <meta name="description" content="This is a social experiment named &quot;Lor Kcir&quot; created by a Russian doctor named Yeltsa Kcir to help improve memory and reaction time.">
+<html>
+   <body>
+       <video autoplay loop width="100%">
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://lycanld.github.io/funrr/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Social Experiment by Dr. Yeltsa Kcir">
-    <meta property="og:description" content="This is a social experiment named &quot;Lor Kcir&quot; created by a Russian doctor named Yeltsa Kcir to help improve memory and reaction time.">
-    <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e949bfc6-13d2-495e-aa57-64a444516ef0.jpg?token=1vVIy1dLj_WxxbwtjxYpH6Yt4C7CqqM3EX_i3jeipKg&height=800&width=1200&expires=33290477401">
+    <source src="rickroll.mp4"
+            type="video/mp4">
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="lycanld.github.io">
-    <meta property="twitter:url" content="https://lycanld.github.io/funrr/">
-    <meta name="twitter:title" content="Social Experiment by Dr. Yeltsa Kcir">
-    <meta name="twitter:description" content="This is a social experiment named &quot;Lor Kcir&quot; created by a Russian doctor named Yeltsa Kcir to help improve memory and reaction time.">
-    <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e949bfc6-13d2-495e-aa57-64a444516ef0.jpg?token=1vVIy1dLj_WxxbwtjxYpH6Yt4C7CqqM3EX_i3jeipKg&height=800&width=1200&expires=33290477401">
-</head>
-<body>
-    <video autoplay loop width="100%">
-        <source src="rickroll.mp4" type="video/mp4">
-        Sorry, your browser doesn't support embedded videos.
-    </video>
-    <script>
-        // Change the variables below to your liking
-        const currentURL = "rickroll.mp4";
-        const pageTitle = "Loading...";
-        // End of changable variables
-
-        function setTitle() {
+    Sorry, your browser doesn't support embedded videos.
+</video>
+      <script>
+         // Change the variables below to your liking
+         const currentURL = "rickroll.mp4";
+         const pageTitle = "Loading...";
+         // End of changable variables
+         
+         function setTitle() {
             document.title = pageTitle;
-        }
-
-        function redirect() {
+         }
+         
+         function redirect() {
             window.location.href = currentURL;
-        }
-
-        function onload() {
+         }
+         
+         function onload() {
             setTitle();
             redirect();
-        }
-
-        window.onload = onload;
-    </script>
-</body>
+         }
+         
+         window.onload = onload();
+       </script>
+   </body>
 </html>
